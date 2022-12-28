@@ -8,19 +8,19 @@ public class Klassendurchschnitt {
         
         int math, Physik, chemisch, Türkisch, Geschichte, Musik;
 
-        System.out.println("Gib deine Mathenote ein :");
+        System.out.println("Geben Sie Ihre Mathenote ein :");
         math = input.nextInt();
 
-        System.out.println("Geben Sie Ihre Physiknotiz ein :");
+        System.out.println("Geben Sie Ihre Physiknote ein :");
         Physik = input.nextInt();
 
         System.out.println("Geben Sie Ihre Chemienote ein :");
         chemisch = input.nextInt();
 
-        System.out.println("Geben Sie Ihre türkische Note ein :");
+        System.out.println("Geben Sie Ihre Türkischenote ein :");
         Türkisch = input.nextInt();
 
-        System.out.println("Geben Sie Ihre Geschichtsunterrichtsnote ein :");
+        System.out.println("Geben Sie Ihre Geschichtenote ein :");
         Geschichte = input.nextInt();
 
         System.out.println("Geben Sie Ihre Musiknote ein :");
@@ -32,7 +32,7 @@ public class Klassendurchschnitt {
         
         System.out.println("Dein Durchschnitt :" + Durchschnitt);
 
-        String str = (Durchschnitt>=60)? "du hast bestanden" : "du konntest nicht bestehen";
+        String str = (Durchschnitt>=60)? "Du hast bestanden" : "Du hast nicht bestehen";
         System.out.println("Deine Situation : " + str);
 
      
