@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Gemüsehändler {
+    public static void main(String[] args) {
+
+        Scanner neu = new Scanner(System.in);
+
+        double birne = 2.14, apfel = 3.67, tomaten = 1.11, banane = 0.95, aubergine = 5.00;
+        double bi, ap, to, ba, au, gesamt;
+
+        System.out.print(" Wie viel kilo birne? : ");
+        bi = neu.nextDouble();
+
+        System.out.print("Wie viel kilo apfel? : ");
+        ap = neu.nextDouble();
+
+        System.out.print("Wie viel kilo tomaten? : ");
+        to = neu.nextDouble();
+
+        System.out.print("Wie viel kilo banane? : ");
+        ba = neu.nextDouble();
+
+        System.out.print("Wie viel kilo aubergine? : ");
+        au = neu.nextDouble();
+
+        gesamt = (birne * bi) + (apfel * ap) + (tomaten * to) + (banane * ba) + (aubergine * au);
+
+        System.out.print("Gesamt: "+ gesamt);
