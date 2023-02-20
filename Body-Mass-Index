@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class vucutKitleEndeksi {
+
+    public static void main(String[] args) {
+
+        Scanner yeni = new Scanner(System.in);
+
+        double kilo, boy, sonuc;
+
+        System.out.println("Boyunuzu giriniz: ");
+        boy = yeni.nextDouble();
+
+        System.out.println("Kilonuzu giriniz: ");
+        kilo = yeni.nextDouble();
+
+        sonuc = (kilo  / (boy * boy) );
+
+        System.out.print("Vücut Kilo Endeksiniz: " + sonuc);
+
+
+    }
+}
