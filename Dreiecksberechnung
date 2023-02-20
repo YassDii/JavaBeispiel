@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class UcgenHesaplama {
+
+    public static void main(String[] args) {
+   
+        int a, b, c, u;
+        double sonuc;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("İlk kenarı giriniz: ");
+        a = girdi.nextInt();
+
+        System.out.print("İkinci kenarı giriniz: ");
+        b = girdi.nextInt();
+
+        System.out.print("Üçüncü kenarı giriniz: ");
+        c = girdi.nextInt();
+
+        u = (a+b+c)/2;
+
+        sonuc = Math.sqrt ( u * ( u - a ) * ( u - b ) * ( u - c ) );
+        System.out.print("Girilen üçgenin alanı: " + sonuc);
+
+
+
+
+
+    }
+}
