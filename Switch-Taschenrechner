@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class SwithIleHesapMakinesi {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int z1,z2,islem;
+        double dene;
+
+        System.out.println("İlk sayıyı giriniz: ");
+        z1 = input.nextInt();
+
+        System.out.println("İkinci sayıyı giriniz: ");
+        z2 = input.nextInt();
+
+        System.out.println("İşleminizi seçiniz; \n 1-Toplama \n 2-Çıkartma \n 3-Çarpma \n 4-Bölme");
+        islem = input.nextInt();
+
+        switch (islem) {
+            case 1:
+                System.out.println("Toplama İşleminizi Seçtiniz \n İşlemin Sonucu: " + (z1 + z2));
+                break;
+            case 2:
+                System.out.println("Çıkartma İşleminizi Seçtiniz \n İşlemin Sonucu: " + (z1 - z2));
+                break;
+            case 3:
+                System.out.println("Çarpma İşleminizi Seçtiniz \n İşlemin Sonucu: " + (z1 * z2));
+                break;
+            case 4:
+                System.out.println(z2 == 2 ? "Bölme İşleminizi Seçtiniz \n İşlemin Sonucu: " + (z1 / z2) : "Hatalı İşlem");
+                break;
+            default:
+                System.out.println("Hatalı işlem yaptınız!, Lütfen tekrar deneyiniz");
+        }
+    }
+}
