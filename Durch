@@ -1,0 +1,81 @@
+import java.util.Scanner;
+public class Durchschnitt {
+    public static void main(String[] args) {
+
+        Scanner giris = new Scanner(System.in);
+        int mat,fizik, turkce, kimya, muzik;
+
+
+
+
+        System.out.print("Matematik notunuzu giriniz: ");
+        mat = giris.nextInt();
+
+        if (mat < 0 || mat >100 ){
+
+            System.out.print("Geçersiz not girişi!");
+
+        } else {
+
+            System.out.print("Fizik notunuzu giriniz: ");
+            fizik = giris.nextInt();
+
+            if (fizik < 0 || fizik >100){
+
+                System.out.print("Geçersiz not girişi!");
+
+            } else {
+
+                System.out.print("Türkçe notuzu giriniz: ");
+                turkce = giris.nextInt();
+
+                if (turkce < 0 || turkce >100) {
+
+                    System.out.print("Geçersiz not girişi!");
+
+                } else {
+
+                    System.out.print("Kimya notunuzu giriniz:");
+                    kimya = giris.nextInt();
+
+                    if (kimya < 0 || kimya >100 ) {
+
+                        System.out.print("Geçersiz not girişi!");
+                    } else {
+
+                        System.out.print("Müzik notunuz giriniz: ");
+                        muzik = giris.nextInt();
+
+                        if (muzik < 0 || muzik >100 ){
+
+                            System.out.print("Geçersiz not girişi!");
+
+                        }else {
+
+                           double durch = mat + fizik + turkce + kimya + muzik / 5;
+                           if (mat >= 55){
+
+                               System.out.println("Tebrikler sınıfı geçtiniz");
+                               System.out.print("Ortalamanız:  " + durch);
+                           } else {
+
+                               System.out.println("Malesef sınıfta kaldınız, sıkma canını seneye yaparsın.");
+                               System.out.print("Ortalamanız:  " + durch);
+                           }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+    }
+}
