@@ -1,0 +1,166 @@
+import java.util.Scanner;
+public class Geburtstag {
+    public static void main(String[] args) {
+
+        Scanner yeni = new Scanner(System.in);
+        int mond, tag;
+
+        System.out.print("Was ist dein Geburtsmond? : ");
+        mond = yeni.nextInt();
+
+        System.out.print("Was ist dein Geburtstag? : ");
+        tag = yeni.nextInt();
+
+        if (mond == 1) {
+
+            if (tag < 22) {
+
+                System.out.println("Dein Sternzeichen ist Steinbock / Oğlak");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Wassermann / Kova");
+
+
+            }
+
+        } else if ( mond == 2) {
+
+            if (tag < 20) {
+
+                System.out.println("Dein Sternzeichen ist Wassermann / Kova");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Fische / Balık");
+
+
+            }
+
+        } else if (mond == 3) {
+
+            if (tag < 21) {
+
+                System.out.println("Dein Sternzeichen ist Fische / Balık");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Widder / Koç");
+
+
+            }
+
+        } else if (mond == 4) {
+
+            if (tag < 21) {
+
+                System.out.println("Dein Sternzeichen ist Widder / Koç");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Stier / Boğa");
+
+
+            }
+
+        } else if (mond == 5) {
+
+            if (tag < 22) {
+
+                System.out.println("Dein Sternzeichen ist Stier / Boğa");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Zwillinge / İkizler");
+
+
+            }
+
+        } else if (mond == 6) {
+
+            if (tag < 23) {
+
+                System.out.println("Dein Sternzeichen ist Zwillinge / İkizler");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Krebs / Yengeç");
+
+
+            }
+
+        } else if (mond == 7) {
+
+            if (tag < 23) {
+
+                System.out.println("Dein Sternzeichen ist Krebs / Yengeç");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Löwe / Aslan");
+
+
+            }
+
+        } else if (mond == 8) {
+
+            if (tag < 23) {
+
+                System.out.println("Dein Sternzeichen ist Löwe / Aslan");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Jungfrau / Başak");
+
+
+            }
+
+        } else if (mond == 9) {
+
+            if (tag < 23) {
+
+                System.out.println("Dein Sternzeichen ist Jungfrau / Başak");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Waage / Terazi");
+
+
+            }
+
+        } else if (mond == 10){
+
+            if (tag < 23) {
+
+                System.out.println("Dein Sternzeichen ist Waage / Terazi");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Skorpion / Akrep");
+
+
+            }
+
+        } else if (mond == 11) {
+
+            if (tag < 22) {
+
+                System.out.println("Dein Sternzeichen ist Skorpion / Akrep");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Schütze / Yay");
+
+
+            }
+
+
+
+        } else if (mond == 12) {
+
+            if (tag < 22) {
+
+                System.out.println("Dein Sternzeichen ist Schütze / Yay");
+            }  else {
+
+                System.out.println("Dein Sternzeichen ist Steinbock / Oğlak");
+
+
+            }
+
+        } else {
+
+            System.out.println(" Hatalı işlem!");
+        }
+
+    }
+}
