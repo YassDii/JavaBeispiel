@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Heiss {
+    public static void main(String[] args) {
+
+        Scanner eingang = new Scanner(System.in);
+        int hitze;
+
+        System.out.print("Was ist Temperatur? :");
+        hitze = eingang.nextInt();
+
+        if (hitze <5 ){
+
+            System.out.print("Sie können Ski fahren");
+
+        } else if ( hitze >= 5 && hitze <=25){
+
+            if (hitze <10) {
+
+                System.out.print("Du kannst ins kino gehen");
+
+            }  else if (hitze >= 10 && hitze < 25){
+                if (hitze >15) {
+
+                    System.out.print("Sie können ein Picknick machen");
+
+                } else {
+                    System.out.println("Du kannst ins kino gehen");
+                    System.out.print("Sie können ein Picknick machen");
+                }
+
+            }   else{
+
+                System.out.println("Du kannst schwimmen gehen");
+
+            }
+
+        }
+
+
+
+    }
+}
