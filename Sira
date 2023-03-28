@@ -1,0 +1,68 @@
+import  java.util.Scanner;
+public class Sira {
+
+    public static void main(String[] args) {
+
+        Scanner inp = new Scanner(System.in);
+        int a, b, c;
+
+        System.out.print("1. Sayı: ");
+        a = inp.nextInt();
+
+        System.out.print("2. Sayı: ");
+        b = inp.nextInt();
+
+        System.out.print("3. Sayı: ");
+        c = inp.nextInt();
+
+        if ( a < b && a < c ) {
+
+            if (b < c) {
+
+                System.out.println("En küçük sayı: " + a);
+                System.out.println("Ortanca sayı: " + b);
+                System.out.println("En büyük sayı: " + c);
+            } else if (b > c) {
+
+                System.out.println("En küçük sayı: " + a);
+                System.out.println("Ortanca sayı: " + c);
+                System.out.println("En büyük sayı: " + b);
+
+            }
+
+
+        } else if ( b < a && b < c) {
+
+            if (a < c) {
+
+                System.out.println("En küçük sayı: " + b);
+                System.out.println("Ortanca sayı: " + a);
+                System.out.println("En büyük sayı: " + c);
+            } else if (a > c) {
+
+                System.out.println("En küçük sayı: " + b);
+                System.out.println("Ortanca sayı: " + c);
+                System.out.println("En büyük sayı: " + a);
+
+            }
+
+        } else {
+            if (a < b) {
+
+                System.out.println("En küçük sayı: " + c);
+                System.out.println("Ortanca sayı: " + a);
+                System.out.println("En büyük sayı: " + b);
+            } else if (a > b) {
+
+                System.out.println("En küçük sayı: " + c);
+                System.out.println("Ortanca sayı: " + b);
+                System.out.println("En büyük sayı: " + a);
+
+            }
+
+
+        }
+
+
+    }
+}
