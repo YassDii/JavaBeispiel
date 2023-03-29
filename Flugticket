@@ -1,0 +1,62 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class Flugticket {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int km, alt, fahr;
+        double tutar,kma = 0.10, ind;
+
+        System.out.print("Mesafeyi km türünden giriniz : ");
+        km = input.nextInt();
+
+        System.out.print("Yaşınızı giriniz: ");
+        alt = input.nextInt();
+
+        System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): ");
+        fahr = input.nextInt();
+
+        if (km <= 0 || alt <=0 || (fahr < 1 || fahr > 2)) {
+
+            System.out.println("Hatalı Veri Girdiniz !");
+
+        } else {
+
+            tutar = km * kma;
+            System.out.println("İndirim Öncesi Tutar: " + tutar);
+
+            if (alt <  12){
+                ind = 0.50;
+                System.out.println("Toplam İndirimli tutar: " + (tutar -= tutar * ind));
+
+            } else if ( alt >= 12 && alt <= 24) {
+
+                ind = 0.10;
+                System.out.println("Toplam İndirimli Tutar: " + (tutar -= tutar * ind));
+                
+            } else if ( alt >= 65) {
+
+                ind = 0.30;
+                System.out.println("Toplam İndirimli Tutar: " + (tutar -= tutar * ind));
+
+            } else {
+
+                System.out.println(" Genel Toplam: " + tutar);
+            }
+
+            if (fahr == 2) {
+
+                ind = 0.20;
+                System.out.println("Ödenecek Toplam Tutar: " + ( tutar -= tutar * ind) * 2 );
+            } else {
+
+                System.out.println("İyi Yolculuklar");
+            }
+
+        }
+
+
+
+
+    }
+}
