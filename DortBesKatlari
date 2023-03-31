@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class DortBesKatlari {
+    public static void main(String[] args) {
+
+        Scanner girdi = new Scanner(System.in);
+        int n;
+
+        System.out.print("Sayı Giriniz: ");
+        n = girdi.nextInt();
+
+        for(int i=1, j=1; i<=n||j<=n; i*=4, j*=5) {
+
+            System.out.println(i + "," + j);
+
+
+      }
+    }
+}
